@@ -1,0 +1,268 @@
+// Control
+$background-color: #556479;
+$background-color2: #494e55;
+$color: #000;
+$color2: #fff;
+html {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Montserrat;
+    color: $color;
+    margin: 0;
+    padding: 0;
+    background-size: 700px;
+    background-repeat: space;
+}
+
+.technology,
+.principle,
+.innovation,
+.feedback,
+.interest,
+.about,
+.contact,
+footer {
+    margin-top: 120px;
+}
+
+hr {
+    border: 1px solid $background-color;
+    border-width: 3px;
+}
+
+.about-header h2,
+.contact-header h2 {
+    border-bottom: 4px solid $color;
+    margin-bottom: 20px;
+}
+
+// Isi
+// Navigasi
+.navbar {
+    box-shadow: -1px 8px 16px 0px rgba(0, 0, 0, 0.20);
+    -webkit-box-shadow: -1px 11px 16px 0px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: -1px 11px 16px 0px rgba(0, 0, 0, 0.20);
+    .navbar-brand {
+        max-width: 36%;
+    }
+    /* Toggler */
+    .navbar-toggler span {
+        display: block;
+        background-color: $background-color;
+        height: 3px;
+        width: 25px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        position: relative;
+        left: 0;
+        opacity: 1;
+        transition: all 0.35s ease-out;
+        transform-origin: center left;
+    }
+    .navbar-toggler span:nth-child(1) {
+        margin-top: 0.3em;
+    }
+    .navbar-toggler:not(.collapsed) span:nth-child(1) {
+        transform: translate(15%, -33%) rotate(45deg);
+    }
+    .navbar-toggler:not(.collapsed) span:nth-child(2) {
+        opacity: 0;
+    }
+    .navbar-toggler:not(.collapsed) span:nth-child(3) {
+        transform: translate(15%, 33%) rotate(-45deg);
+    }
+    .navbar-toggler span:nth-child(1) {
+        transform: translate(0%, 0%) rotate(0deg);
+    }
+    .navbar-toggler span:nth-child(2) {
+        opacity: 1;
+    }
+    .navbar-toggler span:nth-child(3) {
+        transform: translate(0%, 0%) rotate(0deg);
+    }
+}
+
+.btn-hire {
+    background-color: $background-color;
+    border-radius: 5px;
+    &:hover {
+        background-color: $background-color2;
+    }
+    a {
+        color: $color2;
+        text-decoration: none;
+    }
+}
+
+.jumbotron {
+    color: $color;
+}
+
+.btn-download {
+    background-color: $background-color;
+    a {
+        color: $color2;
+    }
+    &:hover {
+        background-color: $background-color2;
+    }
+}
+
+.header-medsos a {
+    color: $color;
+    &:hover {
+        color: $color;
+    }
+}
+
+// Tools
+.technology {
+    color: $background-color2;
+    padding: 10px 0 10px 60px;
+    filter: opacity(90%);
+    border-radius: 40px;
+}
+
+// Principle
+.principle {
+    .body-principle {
+        color: $background-color;
+    }
+    .card {
+        padding: 10px;
+        // color: $background-color2;
+        // border-radius: 10px;
+        // border: 1px solid rgba( 255, 255, 255, 0.18);
+        background: rgba( 255, 255, 255, 0.15);
+        box-shadow: 0 8px 12px 0 rgba( 31, 38, 135, 0.37);
+        backdrop-filter: blur( 4px);
+        -webkit-backdrop-filter: blur( 4px);
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18);
+    }
+    .icon-principle {
+        margin: -11px 0 0 -11px;
+        filter: opacity(0.5);
+    }
+}
+
+.innovation-header {
+    color: $background-color;
+    padding: 15px 10px 0 15px;
+    h2 {
+        border-bottom: 6px solid $background-color;
+        width: 93%;
+    }
+}
+
+.innovation-content {
+    .card-post {
+        color: $color2;
+        text-align: justify;
+        border: none;
+        border-radius: 10px;
+        .post-content {
+            background-color: $background-color;
+            padding: 10px 15px 10px 15px;
+            .post-description {
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+            .btn-detail-post {
+                color: $color2;
+                background-color: $background-color2;
+                transition: all 0.5s;
+                & span {
+                    transition: 0.5s;
+                }
+                & span:after {
+                    content: '\00bb';
+                    opacity: 0;
+                    right: -20px;
+                    transition: 0.5s;
+                }
+                &:hover span:after {
+                    opacity: 1;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
+// Interest
+.interest {
+    color: $color2;
+    padding: 30px 0 30px 0;
+    background-color: $background-color2;
+    filter: opacity(90%);
+}
+
+// About
+.about-header {
+    text-align: right;
+}
+
+// Footer
+footer {
+    background-color: $color;
+    color: $background-color;
+    padding: 30px 0 5px 0;
+    box-shadow: 1px -5px 0px 0px rgba(0, 0, 0, 0.20);
+    -webkit-box-shadow: 1px -5px 0px 0px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: 1px -5px 0px 0px rgba(0, 0, 0, 0.20);
+    ul {
+        list-style: none;
+    }
+    ul li {
+        margin-left: -25px;
+    }
+    ul li a {
+        text-decoration: none;
+        color: $background-color;
+    }
+}
+
+// Mobile View
+@media (max-width: 767.98px) {
+    html {
+        overflow-x: hidden;
+    }
+    .btn-hire {
+        border-radius: 0;
+        display: block;
+        text-align: center;
+        margin: 0 0 -8px -12px;
+        width: 106%;
+    }
+    .header-medsos .col-md-3 {
+        width: 25%;
+    }
+    .technology .col-sm-3 {
+        width: 33%;
+        padding: 10px 2px 10px 5px;
+    }
+    .body-principle .col-sm-12 {
+        padding-bottom: 15px;
+    }
+    .feedback .col-md-4 {
+        width: 50%;
+    }
+    .feedback .col-md-8 {
+        width: 50%;
+    }
+    .test-one {
+        margin-top: -50px;
+    }
+    #text-one {
+        margin-top: -50px;
+    }
+    .about-header {
+        text-align: left;
+    }
+}
